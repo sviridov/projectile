@@ -11,7 +11,7 @@ elpa:
 	touch $@
 
 .PHONY: build
-build : elpa $(OBJECTS)
+build : elpa
 
 .PHONY: test
 test : build

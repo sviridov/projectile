@@ -7,6 +7,10 @@
 (add-to-list 'load-path projectile-root-path)
 (add-to-list 'load-path projectile-test-path)
 
+(require 'undercover)
+(undercover "/projectile\\.el$")
+(undercover-report-on-kill)
+
 (require 'projectile)
 (require 'ack-and-a-half)
 (require 'noflet)
